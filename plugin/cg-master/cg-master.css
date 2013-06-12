@@ -1,0 +1,74 @@
+.cg-master .cg-slide-number{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 16pt;
+}
+
+ul.cg-topics{
+    position: absolute;
+    top: -5px; left:0; right: 0;
+    list-style: none;
+    text-align: center;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    font-size: 8px;
+}
+
+ul.cg-topics.cg-hidden{
+    top: -50px;
+}
+
+li.cg-topic{
+    display: inline-block;
+    width: 200px;
+    font-size: 14pt;
+    padding: 6px 8px;
+    margin: 0 4px;
+    border: 1px solid #444;
+    border-radius: 0 0 12px 12px;
+    color: #888;
+    background: rgba(0,0,0,0.1);
+}
+
+li.cg-topic.cg-current{
+    color: white;
+    border-color: #888;
+}
+
+
+.cg-left{
+    float: left;
+    width: 50%;
+}
+.cg-right{
+    float: right;
+    width: 50%;
+}
+.cg-clear{
+    padding-top: 8px;
+    clear: both;
+}
+
+
+.reveal .cg-logos{
+    display: inline-block;
+    background: white;
+    padding: 8px 24px;
+    border-radius: 12px;
+}
+
+.reveal .cg-logos.dark{
+    background: #1d1d1d;
+}
+
+.reveal .cg-logos img{
+    height: 80px;
+    margin: 0;
+    padding: 0 12px;
+    padding-top: 8px;
+
+}
