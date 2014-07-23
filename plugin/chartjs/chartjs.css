@@ -1,0 +1,27 @@
+.reveal .chartJs{
+    position: relative;
+}
+
+.reveal .bar-legend {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #222;
+    border-radius: 8px;
+    list-style: none;
+    padding: 12px;
+}
+
+.reveal .bar-legend li{
+    margin: 2px 0;
+    font-size: 14pt;
+    height: auto;
+    line-height: 1.5;
+}
+
+.reveal .bar-legend span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+}
