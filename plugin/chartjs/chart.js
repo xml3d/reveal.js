@@ -16,7 +16,7 @@
     var head = document.getElementsByTagName("head")[0];
     var scriptLink = document.createElement("script");
     scriptLink.type = "text/javascript";
-    scriptLink.src = CURRENT_SCRIPT_PATH.replace(/[^/]*$/,'Chart.min.js');
+    scriptLink.src = CURRENT_SCRIPT_PATH.replace(/[^/]*$/,'Chart.lib.js');
     head.appendChild(scriptLink);
 
     var cssLink = document.createElement("link");
@@ -26,6 +26,7 @@
 
     function initialize(){
         Chart.defaults.global.scaleFontColor = "#ccc";
+        Chart.defaults.global.scaleFontSize = 18;
         var charts =$('.chartJs');
         charts.each(function(i, element){
             var chart = $(element);
