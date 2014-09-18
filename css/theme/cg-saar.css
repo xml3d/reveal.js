@@ -204,6 +204,7 @@ body {
 .reveal .dark-bg{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     background: #3F3F3F;
+    padding: 12px;
 }
 
 .reveal .largePic{
