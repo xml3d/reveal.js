@@ -8,8 +8,13 @@
 
 .reveal .dynframe iframe{
     border: 2px solid rgba(150,150,150,0);
-    transition: all .4s linear;
+    transition: border 0.1s linear;
+    padding: 1px;
 }
+.reveal .dynframe.round iframe{
+    border-radius: 12px;
+}
+
 
 .reveal .dynframe iframe.hidden{
     position: absolute;
@@ -17,19 +22,20 @@
 }
 
 .reveal .dynframe iframe.focused{
-    padding: 0px;
-    border: 2px solid rgba(150,150,150,1);
+    border: 2px solid #ff8d5f;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .reveal .dynframe-overlay{
     position: absolute;
     z-index: 100;
     opacity: 0;
     background: black;
-    display: none;
+    transition: opacity 0.3s linear;
 }
 .reveal .dynframe-overlay.focused{
     display: block;
-    opacity: 0.7;
+    opacity: 0;
+
 }
 .reveal .dynframe-overlay.top{
     left: 0; right: 0; top: 0;

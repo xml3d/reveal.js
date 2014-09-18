@@ -86,6 +86,7 @@
                 var src = this.getAttribute("data-src");
 
                 var handle = window.setTimeout(function(){
+                    console.log("Loading...");
                     var iframe = $("<iframe></iframe>");
                     iframe.width(self.width());
                     iframe.height(self.height());
@@ -93,11 +94,11 @@
                     self.addClass("loading");
                     self.append(iframe);
                     iframe[0].onload = function(){
+                        console.log("LOADED!");
                         self.removeClass("loading");
                         iframe.css({opacity: 0});
                         iframe.removeClass("hidden");
                         iframe.animate({opacity: 1}, 500);
-
                     }
                     iframe.attr("src", src);
                 }, 500);
