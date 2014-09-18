@@ -53,7 +53,18 @@
                 element.appendChild(canvas);
                 var chart = window[initFunctionName](canvas.getContext("2d"));
                 var legend = $(chart.generateLegend());
-                element.appendChild(legend[0]);
+                legend.addClass("chartjs-legend");
+                if(element.hasAttribute("data-legend")){
+                    var legendId = element.getAttribute("data-legend")
+                    if(legendId){
+                        $("#" + legendId).empty();
+                        document.getElementById(legendId).appendChild(legend[0]);
+                    }
+                }
+                else{
+                    element.appendChild(legend[0]);
+                }
+
             });
 
         }, 200);
